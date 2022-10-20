@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+ <description>Sept etats. Les cellules changent selon des regles.</description>
+ <auteur>Christopher Langton</auteur>
+ <dateCreation>1984</dateCreation>
+ <modele>
+  <etat label="zero" couleur="white"/>
+  <etat label="un" couleur="blue"/>
+  <etat label="deux" couleur="black"/>
+  <etat label="trois" couleur="red"/>
+  <etat label="quatre" couleur="yellow"/>
+  <etat label="cinq" couleur="magenta"/>
+  <etat label="six" couleur="gray"/>
+  <etat label="sept" couleur="cyan"/>
+  <voisinage>VoisinageVonNeuman</voisinage>
+  <regle>AutomateLangtonLoop</regle>
+</modele>
+</root>

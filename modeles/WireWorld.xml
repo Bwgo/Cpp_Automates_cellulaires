@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+ <description>WireWorld</description>
+ <auteur>Brian Silverman</auteur>
+ <dateCreation>1987</dateCreation>
+ <modele>
+  <etat label="vide" couleur="black"/>
+  <etat label="copper" couleur="yellow"/>
+  <etat label="head" couleur="blue"/>
+  <etat label="tail" couleur="red"/>
+  <voisinage>VoisinageMoore</voisinage>
+  <regle>AutomateWireWorld</regle>
+ </modele>
+</root>

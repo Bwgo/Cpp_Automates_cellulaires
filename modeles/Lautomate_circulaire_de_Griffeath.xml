@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+ <description>xxx</description>
+ <auteur>xxx</auteur>
+ <dateCreation>xxx</dateCreation>
+ <modele>
+  <etat label="normal" couleur="yellow"/>
+  <etat label="existe" couleur="orange"/>
+  <etat label="enerve" couleur="orangered"/>
+  <etat label="fusion" couleur="red"/>
+  <voisinage>VoisinageMoore</voisinage>
+  <regle>AutomateGriffeath</regle>
+ </modele>
+</root>

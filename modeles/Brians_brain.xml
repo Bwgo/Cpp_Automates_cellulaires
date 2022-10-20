@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+ <description>3 etats : mort, vivant, mourant. Les cellules changent selon des règles</description>
+ <auteur>Brian Silverman</auteur>
+ <dateCreation></dateCreation>
+ <modele>
+  <etat label="mort" couleur="white"/>
+  <etat label="vivant" couleur="black"/>
+  <etat label="mourante" couleur="blue"/>
+  <voisinage>VoisinageMoore</voisinage>
+  <regle>AutomateBriansBrain</regle>
+ </modele>
+</root>

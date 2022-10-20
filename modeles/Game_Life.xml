@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+ <description>Deux types d'etats : mort et vivante. Les cellules changent selon des règles</description>
+ <auteur>John Horton Conway</auteur>
+ <dateCreation>1970</dateCreation>
+ <modele>
+  <etat label="mort" couleur="white"/>
+  <etat label="vivant" couleur="black"/>
+  <voisinage>VoisinageMoore</voisinage>
+  <regle>AutomateGameLife</regle>
+ </modele>
+</root>
+
