@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cellulut: Référence de la classe VoisinageFactory</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Cellulut
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-static-methods">Fonctions membres publiques statiques</a> &#124;
+<a href="class_voisinage_factory-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe VoisinageFactory</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe permettant de créer toutes les sortes de voisinages définis dans le programme (main.cpp) en ayant uniquement le nom du voisinage en string. Classe singleton.  
+ <a href="class_voisinage_factory.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="factory_8h_source.html">factory.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a621b59a7759daeb5ea4a089e3d803b96"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a621b59a7759daeb5ea4a089e3d803b96"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_voisinage_factory.html#a621b59a7759daeb5ea4a089e3d803b96">addClass</a> (const std::string n)</td></tr>
+<tr class="memdesc:a621b59a7759daeb5ea4a089e3d803b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'ajouter à un map une nouvelle paire contenant le nom du voisinage en format string et un pointeur sur le constructeur de celui-ci.  <a href="class_voisinage_factory.html#a621b59a7759daeb5ea4a089e3d803b96">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a621b59a7759daeb5ea4a089e3d803b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e029cf365d8ddf4c308b1b87829cc7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_voisinage.html">Voisinage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voisinage_factory.html#a1e029cf365d8ddf4c308b1b87829cc7a">construct</a> (std::string const &amp;n)</td></tr>
+<tr class="memdesc:a1e029cf365d8ddf4c308b1b87829cc7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contruit un nouvel objet de la classe du nom donné en paramètre (s'il se trouve bien dans le map) et retourne un pointeur sur celui-ci, sinon retourne un pointeur null.  <a href="class_voisinage_factory.html#a1e029cf365d8ddf4c308b1b87829cc7a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1e029cf365d8ddf4c308b1b87829cc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034dacf74f77ea3bf10d078551893a49"><td class="memItemLeft" align="right" valign="top"><a id="a034dacf74f77ea3bf10d078551893a49"></a>
+std::map&lt; std::string, constructor_t &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voisinage_factory.html#a034dacf74f77ea3bf10d078551893a49">cbegin</a> ()</td></tr>
+<tr class="memdesc:a034dacf74f77ea3bf10d078551893a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne un const iterator sur le debut de la liste de voisinage de la factory. <br /></td></tr>
+<tr class="separator:a034dacf74f77ea3bf10d078551893a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5299a7f8897b1acd68691297a1b21783"><td class="memItemLeft" align="right" valign="top"><a id="a5299a7f8897b1acd68691297a1b21783"></a>
+std::map&lt; std::string, constructor_t &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voisinage_factory.html#a5299a7f8897b1acd68691297a1b21783">cend</a> ()</td></tr>
+<tr class="memdesc:a5299a7f8897b1acd68691297a1b21783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne un const iterator sur la fin de la liste de voisinage de la factory. <br /></td></tr>
+<tr class="separator:a5299a7f8897b1acd68691297a1b21783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac964064e75e3c8d0e1d4f066c5c46d7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voisinage_factory.html#ac964064e75e3c8d0e1d4f066c5c46d7e">exist</a> (std::string str)</td></tr>
+<tr class="memdesc:ac964064e75e3c8d0e1d4f066c5c46d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifie si un nom de clase existe dans la factory.  <a href="class_voisinage_factory.html#ac964064e75e3c8d0e1d4f066c5c46d7e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac964064e75e3c8d0e1d4f066c5c46d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Fonctions membres publiques statiques</h2></td></tr>
+<tr class="memitem:aa57e4ff65d58960b8774ba1a5e2eee20"><td class="memItemLeft" align="right" valign="top"><a id="aa57e4ff65d58960b8774ba1a5e2eee20"></a>
+static <a class="el" href="class_voisinage_factory.html">VoisinageFactory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voisinage_factory.html#aa57e4ff65d58960b8774ba1a5e2eee20">getFactory</a> ()</td></tr>
+<tr class="memdesc:aa57e4ff65d58960b8774ba1a5e2eee20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne l'instance de la classe <a class="el" href="class_voisinage_factory.html" title="Classe permettant de créer toutes les sortes de voisinages définis dans le programme (main....">VoisinageFactory</a>. <br /></td></tr>
+<tr class="separator:aa57e4ff65d58960b8774ba1a5e2eee20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Classe permettant de créer toutes les sortes de voisinages définis dans le programme (main.cpp) en ayant uniquement le nom du voisinage en string. Classe singleton. </p>
+</div><h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a621b59a7759daeb5ea4a089e3d803b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a621b59a7759daeb5ea4a089e3d803b96">&#9670;&nbsp;</a></span>addClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VoisinageFactory::addClass </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Permet d'ajouter à un map une nouvelle paire contenant le nom du voisinage en format string et un pointeur sur le constructeur de celui-ci. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Nom du voisinage (ne pas oublier de rajouter le classe voisinage voulu entre &lt;&gt; en appelant la méthode). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e029cf365d8ddf4c308b1b87829cc7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e029cf365d8ddf4c308b1b87829cc7a">&#9670;&nbsp;</a></span>construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_voisinage.html">Voisinage</a>* VoisinageFactory::construct </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Contruit un nouvel objet de la classe du nom donné en paramètre (s'il se trouve bien dans le map) et retourne un pointeur sur celui-ci, sinon retourne un pointeur null. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Nom de la classe dont on veut créer un nouvel objet </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac964064e75e3c8d0e1d4f066c5c46d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac964064e75e3c8d0e1d4f066c5c46d7e">&#9670;&nbsp;</a></span>exist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VoisinageFactory::exist </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Verifie si un nom de clase existe dans la factory. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Nom de la classe dont on souhaite vérifier l'existance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="factory_8h_source.html">factory.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

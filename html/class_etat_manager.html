@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cellulut: Référence de la classe EtatManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Cellulut
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-static-methods">Fonctions membres publiques statiques</a> &#124;
+<a href="class_etat_manager-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe EtatManager</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe gérant l'ensemble des états disponibles, possédant ainsi un tableau de tous les états actuellement disponibles (maximum 8). Classe singleton.  
+ <a href="class_etat_manager.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="etat_8h_source.html">etat.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:add979827d9f3d90aa182be6cc8e7d6a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_etat_manager.html#add979827d9f3d90aa182be6cc8e7d6a3">newEtat</a> (const std::string str, QColor color)</td></tr>
+<tr class="memdesc:add979827d9f3d90aa182be6cc8e7d6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construit un nouvel <a class="el" href="class_etat.html" title="Objet Etat repésentant l&#39;état des cellules d&#39;un automate, défini par un indice, un label et une coule...">Etat</a>.  <a href="class_etat_manager.html#add979827d9f3d90aa182be6cc8e7d6a3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:add979827d9f3d90aa182be6cc8e7d6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d64751bbac8af9dffcc07519d14bc36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_etat.html">Etat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_etat_manager.html#a8d64751bbac8af9dffcc07519d14bc36">getEtat</a> (unsigned int i)</td></tr>
+<tr class="memdesc:a8d64751bbac8af9dffcc07519d14bc36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne un pointeur sur l'état se trouvant à l'indice i du tableau d'états de l'<a class="el" href="class_etat_manager.html" title="Classe gérant l&#39;ensemble des états disponibles, possédant ainsi un tableau de tous les états actuelle...">EtatManager</a>.  <a href="class_etat_manager.html#a8d64751bbac8af9dffcc07519d14bc36">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8d64751bbac8af9dffcc07519d14bc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6457022f051964272cd31d0efc0273"><td class="memItemLeft" align="right" valign="top"><a id="a6a6457022f051964272cd31d0efc0273"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_etat_manager.html#a6a6457022f051964272cd31d0efc0273">getNbEtats</a> () const</td></tr>
+<tr class="memdesc:a6a6457022f051964272cd31d0efc0273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne le nombre d'états stockés actuellement dans le tableau d'états de l'<a class="el" href="class_etat_manager.html" title="Classe gérant l&#39;ensemble des états disponibles, possédant ainsi un tableau de tous les états actuelle...">EtatManager</a>. <br /></td></tr>
+<tr class="separator:a6a6457022f051964272cd31d0efc0273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c075adb5f3f5951a70548143a23fc59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_etat_manager.html#a6c075adb5f3f5951a70548143a23fc59">setNbMaxEtats</a> (unsigned int nb)</td></tr>
+<tr class="memdesc:a6c075adb5f3f5951a70548143a23fc59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de choisir le nombre maximal d'états possibles.  <a href="class_etat_manager.html#a6c075adb5f3f5951a70548143a23fc59">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6c075adb5f3f5951a70548143a23fc59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Fonctions membres publiques statiques</h2></td></tr>
+<tr class="memitem:a74b1a1178dd3fea5c56f19f0d3a8c18d"><td class="memItemLeft" align="right" valign="top"><a id="a74b1a1178dd3fea5c56f19f0d3a8c18d"></a>
+static <a class="el" href="class_etat_manager.html">EtatManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_etat_manager.html#a74b1a1178dd3fea5c56f19f0d3a8c18d">getManager</a> ()</td></tr>
+<tr class="memdesc:a74b1a1178dd3fea5c56f19f0d3a8c18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne l'instance de la classe <a class="el" href="class_etat_manager.html" title="Classe gérant l&#39;ensemble des états disponibles, possédant ainsi un tableau de tous les états actuelle...">EtatManager</a>. <br /></td></tr>
+<tr class="separator:a74b1a1178dd3fea5c56f19f0d3a8c18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ada80e8eb45121fcd31d2c1d71d61fe"><td class="memItemLeft" align="right" valign="top"><a id="a5ada80e8eb45121fcd31d2c1d71d61fe"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_etat_manager.html#a5ada80e8eb45121fcd31d2c1d71d61fe">libereManager</a> ()</td></tr>
+<tr class="memdesc:a5ada80e8eb45121fcd31d2c1d71d61fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libère l'instance de l'<a class="el" href="class_etat_manager.html" title="Classe gérant l&#39;ensemble des états disponibles, possédant ainsi un tableau de tous les états actuelle...">EtatManager</a>. <br /></td></tr>
+<tr class="separator:a5ada80e8eb45121fcd31d2c1d71d61fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Classe gérant l'ensemble des états disponibles, possédant ainsi un tableau de tous les états actuellement disponibles (maximum 8). Classe singleton. </p>
+</div><h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a8d64751bbac8af9dffcc07519d14bc36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d64751bbac8af9dffcc07519d14bc36">&#9670;&nbsp;</a></span>getEtat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_etat.html">Etat</a>* EtatManager::getEtat </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retourne un pointeur sur l'état se trouvant à l'indice i du tableau d'états de l'<a class="el" href="class_etat_manager.html" title="Classe gérant l&#39;ensemble des états disponibles, possédant ainsi un tableau de tous les états actuelle...">EtatManager</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Indice de l'état que l'on souhaite récupérer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="add979827d9f3d90aa182be6cc8e7d6a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add979827d9f3d90aa182be6cc8e7d6a3">&#9670;&nbsp;</a></span>newEtat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EtatManager::newEtat </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QColor&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construit un nouvel <a class="el" href="class_etat.html" title="Objet Etat repésentant l&#39;état des cellules d&#39;un automate, défini par un indice, un label et une coule...">Etat</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Label de l'état. </td></tr>
+    <tr><td class="paramname">color</td><td>Couleur de l'état. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6c075adb5f3f5951a70548143a23fc59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c075adb5f3f5951a70548143a23fc59">&#9670;&nbsp;</a></span>setNbMaxEtats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EtatManager::setNbMaxEtats </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de choisir le nombre maximal d'états possibles. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nb</td><td>Nombre maximal d'états possibles. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="etat_8h_source.html">etat.h</a></li>
+<li>etat.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

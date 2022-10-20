@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cellulut:  Fichier source de simulateur.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Cellulut
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">simulateur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SIMULATEUR_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SIMULATEUR_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;factory.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_simulateur.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_simulateur.html">Simulateur</a> : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_reseau.html">Reseau</a>* grille = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_automate.html">Automate</a>* automate = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbPas = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    QTimer* timer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_simulateur.html">Simulateur</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_simulateur.html">Simulateur</a>&amp; s) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_simulateur.html#acf84e5eeced568270ba937bdfa025527">Simulateur</a>(<span class="keyword">const</span> <a class="code" href="class_simulateur.html">Simulateur</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_simulateur.html#acf84e5eeced568270ba937bdfa025527">Simulateur</a>(<a class="code" href="class_automate.html">Automate</a>* a, QObject * parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_simulateur.html#acf84e5eeced568270ba937bdfa025527">   39</a></span>&#160;    <a class="code" href="class_simulateur.html#acf84e5eeced568270ba937bdfa025527">Simulateur</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_simulateur.html#a1bcb3910542cfb7333b27605c0787bbc">   44</a></span>&#160;    <a class="code" href="class_simulateur.html#a1bcb3910542cfb7333b27605c0787bbc">~Simulateur</a>() {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">delete</span> automate;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">delete</span> timer;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_simulateur.html#aab450630c1b69f6f6ee553d65fd16e61">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulateur.html#aab450630c1b69f6f6ee553d65fd16e61">setGrille</a>(<a class="code" href="class_reseau.html">Reseau</a>* r) { grille = r; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_simulateur.html#a432d46b909a9dfe364b89307c24a3c13">   59</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulateur.html#a432d46b909a9dfe364b89307c24a3c13">setAutomate</a>(<a class="code" href="class_automate.html">Automate</a>* a) { automate = a; }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_simulateur.html#a260e91855a914da9e33b3233e8618a50">   64</a></span>&#160;    <a class="code" href="class_automate.html">Automate</a>* <a class="code" href="class_simulateur.html#a260e91855a914da9e33b3233e8618a50">getAutomate</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> automate; }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_simulateur.html#aa1055f19fa27fbc913d430bef90e943e">   69</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_reseau.html">Reseau</a>* <a class="code" href="class_simulateur.html#aa1055f19fa27fbc913d430bef90e943e">getReseau</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> grille; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_simulateur.html#a7f1ff6fff090c9ad60534c3ce17dc877">   74</a></span>&#160;    <span class="keyword">const</span> QTimer* <a class="code" href="class_simulateur.html#a7f1ff6fff090c9ad60534c3ce17dc877">getTimer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> timer; }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulateur.html#afc896ad20fd2ddb179186bb72f0a960d">simulation</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulateur.html#aa75e30046aeba8a6aecd01e629d82fe7">arret</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulateur.html#a0479145ebb51fb807550fa002c81eaba">setSpeed</a>(<span class="keywordtype">int</span> speed);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulateur.html#ad47a625a946e65e90e1d46c53206f303">suivant</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SIMULATEUR_H</span></div>
+<div class="ttc" id="aclass_automate_html"><div class="ttname"><a href="class_automate.html">Automate</a></div><div class="ttdoc">Objet qui appliquera des transitions sur un réseau.</div><div class="ttdef"><b>Definition:</b> automate.h:349</div></div>
+<div class="ttc" id="aclass_reseau_html"><div class="ttname"><a href="class_reseau.html">Reseau</a></div><div class="ttdoc">Classe permettant de gérer la grille où se déroule la simulation.</div><div class="ttdef"><b>Definition:</b> reseau.h:12</div></div>
+<div class="ttc" id="aclass_simulateur_html"><div class="ttname"><a href="class_simulateur.html">Simulateur</a></div><div class="ttdoc">Simulateur réalisant la gestion des transitions de l'automate.</div><div class="ttdef"><b>Definition:</b> simulateur.h:9</div></div>
+<div class="ttc" id="aclass_simulateur_html_a0479145ebb51fb807550fa002c81eaba"><div class="ttname"><a href="class_simulateur.html#a0479145ebb51fb807550fa002c81eaba">Simulateur::setSpeed</a></div><div class="ttdeci">void setSpeed(int speed)</div><div class="ttdoc">Revient en arrière d'une transition si cela est possible.</div><div class="ttdef"><b>Definition:</b> simulateur.cpp:51</div></div>
+<div class="ttc" id="aclass_simulateur_html_a1bcb3910542cfb7333b27605c0787bbc"><div class="ttname"><a href="class_simulateur.html#a1bcb3910542cfb7333b27605c0787bbc">Simulateur::~Simulateur</a></div><div class="ttdeci">~Simulateur()</div><div class="ttdoc">Destructeur de la classe Simulateur. Désaloue l'automate du simulateur ainsi que le timer.</div><div class="ttdef"><b>Definition:</b> simulateur.h:44</div></div>
+<div class="ttc" id="aclass_simulateur_html_a260e91855a914da9e33b3233e8618a50"><div class="ttname"><a href="class_simulateur.html#a260e91855a914da9e33b3233e8618a50">Simulateur::getAutomate</a></div><div class="ttdeci">Automate * getAutomate() const</div><div class="ttdoc">Accesseur permettant d'obtenir le pointeur sur l'automate du simulateur.</div><div class="ttdef"><b>Definition:</b> simulateur.h:64</div></div>
+<div class="ttc" id="aclass_simulateur_html_a432d46b909a9dfe364b89307c24a3c13"><div class="ttname"><a href="class_simulateur.html#a432d46b909a9dfe364b89307c24a3c13">Simulateur::setAutomate</a></div><div class="ttdeci">void setAutomate(Automate *a)</div><div class="ttdoc">Accesseur permettant d'assigner (ou modifier) l'automate du simulateur.</div><div class="ttdef"><b>Definition:</b> simulateur.h:59</div></div>
+<div class="ttc" id="aclass_simulateur_html_a7f1ff6fff090c9ad60534c3ce17dc877"><div class="ttname"><a href="class_simulateur.html#a7f1ff6fff090c9ad60534c3ce17dc877">Simulateur::getTimer</a></div><div class="ttdeci">const QTimer * getTimer() const</div><div class="ttdoc">Accesseur permettant d'obtenir le pointeur sur le timer.</div><div class="ttdef"><b>Definition:</b> simulateur.h:74</div></div>
+<div class="ttc" id="aclass_simulateur_html_aa1055f19fa27fbc913d430bef90e943e"><div class="ttname"><a href="class_simulateur.html#aa1055f19fa27fbc913d430bef90e943e">Simulateur::getReseau</a></div><div class="ttdeci">const Reseau * getReseau() const</div><div class="ttdoc">Accesseur permettant d'obtenir le pointeur sur le réseau.</div><div class="ttdef"><b>Definition:</b> simulateur.h:69</div></div>
+<div class="ttc" id="aclass_simulateur_html_aa75e30046aeba8a6aecd01e629d82fe7"><div class="ttname"><a href="class_simulateur.html#aa75e30046aeba8a6aecd01e629d82fe7">Simulateur::arret</a></div><div class="ttdeci">void arret()</div><div class="ttdoc">Arrête la simulation en arrêtant le timer.</div><div class="ttdef"><b>Definition:</b> simulateur.cpp:44</div></div>
+<div class="ttc" id="aclass_simulateur_html_aab450630c1b69f6f6ee553d65fd16e61"><div class="ttname"><a href="class_simulateur.html#aab450630c1b69f6f6ee553d65fd16e61">Simulateur::setGrille</a></div><div class="ttdeci">void setGrille(Reseau *r)</div><div class="ttdoc">Accesseur permettant d'assigner (ou modifier) la grille du simulateur.</div><div class="ttdef"><b>Definition:</b> simulateur.h:53</div></div>
+<div class="ttc" id="aclass_simulateur_html_acf84e5eeced568270ba937bdfa025527"><div class="ttname"><a href="class_simulateur.html#acf84e5eeced568270ba937bdfa025527">Simulateur::Simulateur</a></div><div class="ttdeci">Simulateur()=default</div><div class="ttdoc">Constructeur de la classe Simulateur sans argument.</div></div>
+<div class="ttc" id="aclass_simulateur_html_ad47a625a946e65e90e1d46c53206f303"><div class="ttname"><a href="class_simulateur.html#ad47a625a946e65e90e1d46c53206f303">Simulateur::suivant</a></div><div class="ttdeci">void suivant()</div><div class="ttdoc">Effectue une unique transition sur le réseau pointé par le simulateur grâce à l'automate pointé par l...</div><div class="ttdef"><b>Definition:</b> simulateur.cpp:22</div></div>
+<div class="ttc" id="aclass_simulateur_html_afc896ad20fd2ddb179186bb72f0a960d"><div class="ttname"><a href="class_simulateur.html#afc896ad20fd2ddb179186bb72f0a960d">Simulateur::simulation</a></div><div class="ttdeci">void simulation()</div><div class="ttdoc">Effectue des transitions sur le réseau pointé par le simulateur grâce à l'automate pointé par le simu...</div><div class="ttdef"><b>Definition:</b> simulateur.cpp:15</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cellulut:  Fichier source de caretaker.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Cellulut
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">caretaker.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CARETAKER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CARETAKER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QCoreApplication&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QFile&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QTextStream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QDomDocument&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QDomElement&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QDomText&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QInputDialog&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QStringList&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;reseau.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_care_taker.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_care_taker.html">CareTaker</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbBackups;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> emptyPrevious = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbprevious = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_reseau_1_1_memento.html">Reseau::Memento</a> ** tab;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// newClickPrevious = 1 avant le premier retour précédent d&#39;une série de retours</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// newClickPrevious = 0 quand la simulation n&#39;a pas avancé d&#39;un pas depuis le dernier retour en arrière</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> newClickPrevious = 1;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_care_taker.html">CareTaker</a>(<span class="keyword">const</span> <a class="code" href="class_care_taker.html">CareTaker</a>&amp; C) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    ostream&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_care_taker.html">CareTaker</a>&amp; C) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_care_taker.html#aae6e6bd4c24fff2ebf4ea1b7404087ca">   42</a></span>&#160;    <a class="code" href="class_care_taker.html#aae6e6bd4c24fff2ebf4ea1b7404087ca">CareTaker</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbsBackups) : nbBackups(nbsBackups), tab(new <a class="code" href="class_reseau.html">Reseau</a>::Memento*[nbsBackups+1]) {};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_care_taker.html#aa3be731de11594ded963617a522c3c81">   47</a></span>&#160;    <a class="code" href="class_care_taker.html#aa3be731de11594ded963617a522c3c81">~CareTaker</a>(){</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; nbprevious; i++)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keyword">delete</span> tab[i];</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">delete</span>[] tab;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_care_taker.html#a7fffb78da96633bf4c21f045af1dc81b">   56</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_care_taker.html#a7fffb78da96633bf4c21f045af1dc81b">getNbBackups</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> nbBackups; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> setNbBackups(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Sauvegarder une configuration manuellement</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> addMemento(<span class="keyword">const</span> <a class="code" href="class_reseau_1_1_memento.html">Reseau::Memento</a>&amp; backup, <span class="keywordtype">string</span> title, <span class="keywordtype">string</span> modele);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> saveXMLFile(<span class="keyword">const</span> <a class="code" href="class_reseau_1_1_memento.html">Reseau::Memento</a>&amp; memento, <span class="keywordtype">string</span> title, <span class="keywordtype">string</span> modele);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> saveXMLConfiguration(QDomDocument&amp; xml, <span class="keyword">const</span> <span class="keywordtype">string</span> title, QDomElement&amp; configuration, <span class="keyword">const</span> <a class="code" href="class_reseau_1_1_memento.html">Reseau::Memento</a>&amp; memento);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// Sauvergarder la configuration actuelle à chaque pas de simulation</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_care_taker.html#a5790c6556cf37101d3589c9382b518fa">   96</a></span>&#160;    <a class="code" href="class_reseau_1_1_memento.html">Reseau::Memento</a>** <a class="code" href="class_care_taker.html#a5790c6556cf37101d3589c9382b518fa">gettabPrevious</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> tab; }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_care_taker.html#a540864dd4e181c13cb372dba066eae07">  101</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_care_taker.html#a540864dd4e181c13cb372dba066eae07">getnbprevious</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> nbprevious; }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="class_reseau_1_1_memento.html">Reseau::Memento</a>* depilerprevious();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> removelastone();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> addMementoPrevious(<a class="code" href="class_reseau_1_1_memento.html">Reseau::Memento</a> *backup);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span> emptyPreviousConfigurations();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="class_care_taker.html#ace3df91cf5573140285cbe5517482370">  128</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_care_taker.html#ace3df91cf5573140285cbe5517482370">setNewClickPrevious</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n) { newClickPrevious = n; }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="class_care_taker.html#a12ad17964b37c97a4f4412c4dcde1951">  133</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_care_taker.html#a12ad17964b37c97a4f4412c4dcde1951">getNewClickPrevious</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> newClickPrevious; }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CARETAKER_H</span></div>
+<div class="ttc" id="aclass_care_taker_html"><div class="ttname"><a href="class_care_taker.html">CareTaker</a></div><div class="ttdoc">Classe permettant de sauvegarder et charger des configurations dans le cadre de la fonctionnalité de ...</div><div class="ttdef"><b>Definition:</b> caretaker.h:22</div></div>
+<div class="ttc" id="aclass_care_taker_html_a12ad17964b37c97a4f4412c4dcde1951"><div class="ttname"><a href="class_care_taker.html#a12ad17964b37c97a4f4412c4dcde1951">CareTaker::getNewClickPrevious</a></div><div class="ttdeci">unsigned int getNewClickPrevious() const</div><div class="ttdoc">Accesseur permettant de savoir si le dernier clic sur le bouton configuration précédente a été fait j...</div><div class="ttdef"><b>Definition:</b> caretaker.h:133</div></div>
+<div class="ttc" id="aclass_care_taker_html_a540864dd4e181c13cb372dba066eae07"><div class="ttname"><a href="class_care_taker.html#a540864dd4e181c13cb372dba066eae07">CareTaker::getnbprevious</a></div><div class="ttdeci">unsigned int getnbprevious() const</div><div class="ttdoc">Accesseur de nbprevious.</div><div class="ttdef"><b>Definition:</b> caretaker.h:101</div></div>
+<div class="ttc" id="aclass_care_taker_html_a5790c6556cf37101d3589c9382b518fa"><div class="ttname"><a href="class_care_taker.html#a5790c6556cf37101d3589c9382b518fa">CareTaker::gettabPrevious</a></div><div class="ttdeci">Reseau::Memento ** gettabPrevious() const</div><div class="ttdoc">Accesseur de tab : tableau des nbBackups configurations précédentes.</div><div class="ttdef"><b>Definition:</b> caretaker.h:96</div></div>
+<div class="ttc" id="aclass_care_taker_html_a7fffb78da96633bf4c21f045af1dc81b"><div class="ttname"><a href="class_care_taker.html#a7fffb78da96633bf4c21f045af1dc81b">CareTaker::getNbBackups</a></div><div class="ttdeci">unsigned int getNbBackups() const</div><div class="ttdoc">Accesseur du nombre maximum de configurations qui pourront être mémorisées et chargées de nouveau ave...</div><div class="ttdef"><b>Definition:</b> caretaker.h:56</div></div>
+<div class="ttc" id="aclass_care_taker_html_aa3be731de11594ded963617a522c3c81"><div class="ttname"><a href="class_care_taker.html#aa3be731de11594ded963617a522c3c81">CareTaker::~CareTaker</a></div><div class="ttdeci">~CareTaker()</div><div class="ttdoc">Destructeur de la classe CareTaker.</div><div class="ttdef"><b>Definition:</b> caretaker.h:47</div></div>
+<div class="ttc" id="aclass_care_taker_html_aae6e6bd4c24fff2ebf4ea1b7404087ca"><div class="ttname"><a href="class_care_taker.html#aae6e6bd4c24fff2ebf4ea1b7404087ca">CareTaker::CareTaker</a></div><div class="ttdeci">CareTaker(unsigned int nbsBackups)</div><div class="ttdoc">Constructeur de la classe CareTaker.</div><div class="ttdef"><b>Definition:</b> caretaker.h:42</div></div>
+<div class="ttc" id="aclass_care_taker_html_ace3df91cf5573140285cbe5517482370"><div class="ttname"><a href="class_care_taker.html#ace3df91cf5573140285cbe5517482370">CareTaker::setNewClickPrevious</a></div><div class="ttdeci">void setNewClickPrevious(unsigned int n)</div><div class="ttdoc">Mise à jour de la variable permettant de savoir si le fichier contenant l'historique est vide.</div><div class="ttdef"><b>Definition:</b> caretaker.h:128</div></div>
+<div class="ttc" id="aclass_reseau_1_1_memento_html"><div class="ttname"><a href="class_reseau_1_1_memento.html">Reseau::Memento</a></div><div class="ttdoc">Classe disposant des fonctions permettant d'enregistrer des configurations à des moments donnés.</div><div class="ttdef"><b>Definition:</b> reseau.h:151</div></div>
+<div class="ttc" id="aclass_reseau_html"><div class="ttname"><a href="class_reseau.html">Reseau</a></div><div class="ttdoc">Classe permettant de gérer la grille où se déroule la simulation.</div><div class="ttdef"><b>Definition:</b> reseau.h:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

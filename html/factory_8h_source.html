@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cellulut:  Fichier source de factory.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Cellulut
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">factory.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FACTORY_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FACTORY_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;automate.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <a class="code" href="class_automate.html">Automate</a>* constructorAutomate() { <span class="keywordflow">return</span> <span class="keyword">new</span> T(); }</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_automate_factory.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_automate_factory.html">AutomateFactory</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;   <span class="keyword">typedef</span> <a class="code" href="class_automate.html">Automate</a>*(*constructor_t)();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;   std::map&lt;std::string, constructor_t&gt; listAutomate;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   <a class="code" href="class_automate_factory.html">AutomateFactory</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   ~<a class="code" href="class_automate_factory.html">AutomateFactory</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;   <a class="code" href="class_automate_factory.html">AutomateFactory</a>(<span class="keyword">const</span> <a class="code" href="class_automate_factory.html">AutomateFactory</a>&amp; a) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;   <a class="code" href="class_automate_factory.html">AutomateFactory</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_automate_factory.html">AutomateFactory</a>&amp; a) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_automate_factory.html#a3ae48f751850fb9f88321dc2001b5fb6">   27</a></span>&#160;   <span class="keyword">static</span> <a class="code" href="class_automate_factory.html">AutomateFactory</a>&amp; <a class="code" href="class_automate_factory.html#a3ae48f751850fb9f88321dc2001b5fb6">getFactory</a>() {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;       <span class="keyword">static</span> <a class="code" href="class_automate_factory.html">AutomateFactory</a> a;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;       <span class="keywordflow">return</span> a;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;   }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;   <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_automate_factory.html#a00dcc5368fa4dd17884966d377fc2732">   37</a></span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_automate_factory.html#a00dcc5368fa4dd17884966d377fc2732">addClass</a>(<span class="keyword">const</span> std::string n) { listAutomate.insert(std::make_pair(n, &amp;constructorAutomate&lt;T&gt;)); }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_automate_factory.html#a49186010763bd51e0a56bee5100099e0">   43</a></span>&#160;   <a class="code" href="class_automate.html">Automate</a>* <a class="code" href="class_automate_factory.html#a49186010763bd51e0a56bee5100099e0">construct</a>(std::string <span class="keyword">const</span>&amp; n) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keywordflow">if</span>(!<a class="code" href="class_automate_factory.html#a263beb9d1b57a869c26e4d22b201ade0">exist</a>(n)) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      map&lt;std::string, constructor_t&gt;::iterator it = listAutomate.find(n);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">return</span> it-&gt;second();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;   }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;   </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_automate_factory.html#adc34201e187e2be6859f970120f35bec">   52</a></span>&#160;   std::map&lt;std::string, constructor_t&gt;::const_iterator <a class="code" href="class_automate_factory.html#adc34201e187e2be6859f970120f35bec">cbegin</a>() { <span class="keywordflow">return</span> listAutomate.cbegin(); }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_automate_factory.html#a109a64b6eb1af11f078e0227ed73cd28">   57</a></span>&#160;   std::map&lt;std::string, constructor_t&gt;::const_iterator <a class="code" href="class_automate_factory.html#a109a64b6eb1af11f078e0227ed73cd28">cend</a>() { <span class="keywordflow">return</span> listAutomate.cend(); }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_automate_factory.html#a263beb9d1b57a869c26e4d22b201ade0">   63</a></span>&#160;   <span class="keywordtype">bool</span> <a class="code" href="class_automate_factory.html#a263beb9d1b57a869c26e4d22b201ade0">exist</a>(std::string str) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;       map&lt;std::string, constructor_t&gt;::iterator it = listAutomate.find(str);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;       <span class="keywordflow">return</span> (it != listAutomate.end());</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;   }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <a class="code" href="class_voisinage.html">Voisinage</a>* constructorVoisinage() { <span class="keywordflow">return</span> <span class="keyword">new</span> T(); }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_voisinage_factory.html">   76</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_voisinage_factory.html">VoisinageFactory</a> {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;   <span class="keyword">typedef</span> <a class="code" href="class_voisinage.html">Voisinage</a>*(*constructor_t)();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;   std::map&lt;std::string, constructor_t&gt; listVoisinage; <span class="comment">// {&quot;VoisinageMoore&quot; : *VoisinageMoore}</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;   <a class="code" href="class_voisinage_factory.html">VoisinageFactory</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;   ~<a class="code" href="class_voisinage_factory.html">VoisinageFactory</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;   <a class="code" href="class_voisinage_factory.html">VoisinageFactory</a>(<span class="keyword">const</span> <a class="code" href="class_voisinage_factory.html">VoisinageFactory</a>&amp; a) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;   <a class="code" href="class_voisinage_factory.html">VoisinageFactory</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_voisinage_factory.html">VoisinageFactory</a>&amp; a) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_voisinage_factory.html#aa57e4ff65d58960b8774ba1a5e2eee20">   90</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_voisinage_factory.html">VoisinageFactory</a>&amp; <a class="code" href="class_voisinage_factory.html#aa57e4ff65d58960b8774ba1a5e2eee20">getFactory</a>() {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_voisinage_factory.html">VoisinageFactory</a> v;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> v;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;   <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_voisinage_factory.html#a621b59a7759daeb5ea4a089e3d803b96">  100</a></span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_voisinage_factory.html#a621b59a7759daeb5ea4a089e3d803b96">addClass</a>(<span class="keyword">const</span> std::string n) { listVoisinage.insert(std::make_pair(n, &amp;constructorVoisinage&lt;T&gt;)); }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_voisinage_factory.html#a1e029cf365d8ddf4c308b1b87829cc7a">  106</a></span>&#160;   <a class="code" href="class_voisinage.html">Voisinage</a>* <a class="code" href="class_voisinage_factory.html#a1e029cf365d8ddf4c308b1b87829cc7a">construct</a>(std::string <span class="keyword">const</span>&amp; n) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keywordflow">if</span>(!<a class="code" href="class_voisinage_factory.html#ac964064e75e3c8d0e1d4f066c5c46d7e">exist</a>(n)) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      map&lt;std::string, constructor_t&gt;::iterator it = listVoisinage.find(n);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">return</span> it-&gt;second();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;   }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;   </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_voisinage_factory.html#a034dacf74f77ea3bf10d078551893a49">  115</a></span>&#160;   std::map&lt;std::string, constructor_t&gt;::const_iterator <a class="code" href="class_voisinage_factory.html#a034dacf74f77ea3bf10d078551893a49">cbegin</a>() { <span class="keywordflow">return</span> listVoisinage.cbegin(); }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="class_voisinage_factory.html#a5299a7f8897b1acd68691297a1b21783">  120</a></span>&#160;   std::map&lt;std::string, constructor_t&gt;::const_iterator <a class="code" href="class_voisinage_factory.html#a5299a7f8897b1acd68691297a1b21783">cend</a>() { <span class="keywordflow">return</span> listVoisinage.cend(); }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_voisinage_factory.html#ac964064e75e3c8d0e1d4f066c5c46d7e">  126</a></span>&#160;   <span class="keywordtype">bool</span> <a class="code" href="class_voisinage_factory.html#ac964064e75e3c8d0e1d4f066c5c46d7e">exist</a>(std::string str) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;       map&lt;std::string, constructor_t&gt;::iterator it = listVoisinage.find(str);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;       <span class="keywordflow">return</span> (it != listVoisinage.end());</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;   }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// FACTORY_H</span></div>
+<div class="ttc" id="aclass_automate_factory_html"><div class="ttname"><a href="class_automate_factory.html">AutomateFactory</a></div><div class="ttdoc">Classe permettant de créer toutes les sortes d'automates définies dans le programme (main....</div><div class="ttdef"><b>Definition:</b> factory.h:13</div></div>
+<div class="ttc" id="aclass_automate_factory_html_a00dcc5368fa4dd17884966d377fc2732"><div class="ttname"><a href="class_automate_factory.html#a00dcc5368fa4dd17884966d377fc2732">AutomateFactory::addClass</a></div><div class="ttdeci">void addClass(const std::string n)</div><div class="ttdoc">Permet d'ajouter à un map une nouvelle paire contenant le nom de l'automate en format string et un po...</div><div class="ttdef"><b>Definition:</b> factory.h:37</div></div>
+<div class="ttc" id="aclass_automate_factory_html_a109a64b6eb1af11f078e0227ed73cd28"><div class="ttname"><a href="class_automate_factory.html#a109a64b6eb1af11f078e0227ed73cd28">AutomateFactory::cend</a></div><div class="ttdeci">std::map&lt; std::string, constructor_t &gt;::const_iterator cend()</div><div class="ttdoc">Retourne un const iterator sur la fin de la liste d'automate de la factory.</div><div class="ttdef"><b>Definition:</b> factory.h:57</div></div>
+<div class="ttc" id="aclass_automate_factory_html_a263beb9d1b57a869c26e4d22b201ade0"><div class="ttname"><a href="class_automate_factory.html#a263beb9d1b57a869c26e4d22b201ade0">AutomateFactory::exist</a></div><div class="ttdeci">bool exist(std::string str)</div><div class="ttdoc">Verifie si un nom de clase existe dans la factory.</div><div class="ttdef"><b>Definition:</b> factory.h:63</div></div>
+<div class="ttc" id="aclass_automate_factory_html_a3ae48f751850fb9f88321dc2001b5fb6"><div class="ttname"><a href="class_automate_factory.html#a3ae48f751850fb9f88321dc2001b5fb6">AutomateFactory::getFactory</a></div><div class="ttdeci">static AutomateFactory &amp; getFactory()</div><div class="ttdoc">Retourne l'instance de la classe AutomateFactory.</div><div class="ttdef"><b>Definition:</b> factory.h:27</div></div>
+<div class="ttc" id="aclass_automate_factory_html_a49186010763bd51e0a56bee5100099e0"><div class="ttname"><a href="class_automate_factory.html#a49186010763bd51e0a56bee5100099e0">AutomateFactory::construct</a></div><div class="ttdeci">Automate * construct(std::string const &amp;n)</div><div class="ttdoc">Contruit un nouvel objet de la classe du nom donné en paramètre (s'il se trouve bien dans le map) et ...</div><div class="ttdef"><b>Definition:</b> factory.h:43</div></div>
+<div class="ttc" id="aclass_automate_factory_html_adc34201e187e2be6859f970120f35bec"><div class="ttname"><a href="class_automate_factory.html#adc34201e187e2be6859f970120f35bec">AutomateFactory::cbegin</a></div><div class="ttdeci">std::map&lt; std::string, constructor_t &gt;::const_iterator cbegin()</div><div class="ttdoc">Retourne un const iterator sur le debut de la liste d'automates de la factory.</div><div class="ttdef"><b>Definition:</b> factory.h:52</div></div>
+<div class="ttc" id="aclass_automate_html"><div class="ttname"><a href="class_automate.html">Automate</a></div><div class="ttdoc">Objet qui appliquera des transitions sur un réseau.</div><div class="ttdef"><b>Definition:</b> automate.h:349</div></div>
+<div class="ttc" id="aclass_voisinage_factory_html"><div class="ttname"><a href="class_voisinage_factory.html">VoisinageFactory</a></div><div class="ttdoc">Classe permettant de créer toutes les sortes de voisinages définis dans le programme (main....</div><div class="ttdef"><b>Definition:</b> factory.h:76</div></div>
+<div class="ttc" id="aclass_voisinage_factory_html_a034dacf74f77ea3bf10d078551893a49"><div class="ttname"><a href="class_voisinage_factory.html#a034dacf74f77ea3bf10d078551893a49">VoisinageFactory::cbegin</a></div><div class="ttdeci">std::map&lt; std::string, constructor_t &gt;::const_iterator cbegin()</div><div class="ttdoc">Retourne un const iterator sur le debut de la liste de voisinage de la factory.</div><div class="ttdef"><b>Definition:</b> factory.h:115</div></div>
+<div class="ttc" id="aclass_voisinage_factory_html_a1e029cf365d8ddf4c308b1b87829cc7a"><div class="ttname"><a href="class_voisinage_factory.html#a1e029cf365d8ddf4c308b1b87829cc7a">VoisinageFactory::construct</a></div><div class="ttdeci">Voisinage * construct(std::string const &amp;n)</div><div class="ttdoc">Contruit un nouvel objet de la classe du nom donné en paramètre (s'il se trouve bien dans le map) et ...</div><div class="ttdef"><b>Definition:</b> factory.h:106</div></div>
+<div class="ttc" id="aclass_voisinage_factory_html_a5299a7f8897b1acd68691297a1b21783"><div class="ttname"><a href="class_voisinage_factory.html#a5299a7f8897b1acd68691297a1b21783">VoisinageFactory::cend</a></div><div class="ttdeci">std::map&lt; std::string, constructor_t &gt;::const_iterator cend()</div><div class="ttdoc">Retourne un const iterator sur la fin de la liste de voisinage de la factory.</div><div class="ttdef"><b>Definition:</b> factory.h:120</div></div>
+<div class="ttc" id="aclass_voisinage_factory_html_a621b59a7759daeb5ea4a089e3d803b96"><div class="ttname"><a href="class_voisinage_factory.html#a621b59a7759daeb5ea4a089e3d803b96">VoisinageFactory::addClass</a></div><div class="ttdeci">void addClass(const std::string n)</div><div class="ttdoc">Permet d'ajouter à un map une nouvelle paire contenant le nom du voisinage en format string et un poi...</div><div class="ttdef"><b>Definition:</b> factory.h:100</div></div>
+<div class="ttc" id="aclass_voisinage_factory_html_aa57e4ff65d58960b8774ba1a5e2eee20"><div class="ttname"><a href="class_voisinage_factory.html#aa57e4ff65d58960b8774ba1a5e2eee20">VoisinageFactory::getFactory</a></div><div class="ttdeci">static VoisinageFactory &amp; getFactory()</div><div class="ttdoc">Retourne l'instance de la classe VoisinageFactory.</div><div class="ttdef"><b>Definition:</b> factory.h:90</div></div>
+<div class="ttc" id="aclass_voisinage_factory_html_ac964064e75e3c8d0e1d4f066c5c46d7e"><div class="ttname"><a href="class_voisinage_factory.html#ac964064e75e3c8d0e1d4f066c5c46d7e">VoisinageFactory::exist</a></div><div class="ttdeci">bool exist(std::string str)</div><div class="ttdoc">Verifie si un nom de clase existe dans la factory.</div><div class="ttdef"><b>Definition:</b> factory.h:126</div></div>
+<div class="ttc" id="aclass_voisinage_html"><div class="ttname"><a href="class_voisinage.html">Voisinage</a></div><div class="ttdoc">Classe permettant de définir l'ensemble des cellules voisines à prendre en compte dans le calcul de l...</div><div class="ttdef"><b>Definition:</b> automate.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cellulut:  Fichier source de etat.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Cellulut
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">etat.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ETAT_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ETAT_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QColor&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_etat.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_etat.html">Etat</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> indice;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    std::string label;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    QColor couleur;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;public :</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_etat.html#a542f4d814afc5fba55937b7526e793d1">   24</a></span>&#160;    <a class="code" href="class_etat.html#a542f4d814afc5fba55937b7526e793d1">Etat</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i, std::string lab, QColor c) : indice(i), label(lab), couleur(c) {}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_etat.html#ae9ff5e27a32638b17e26c82c3c2e4138">   29</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_etat.html#ae9ff5e27a32638b17e26c82c3c2e4138">getIndice</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> indice; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_etat.html#a671dd6cebfda630a15b3c757b3d58d46">   34</a></span>&#160;    std::string <a class="code" href="class_etat.html#a671dd6cebfda630a15b3c757b3d58d46">getLabel</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> label; }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_etat.html#ad01bd9fd535216e8ca15a0962f7d074f">   39</a></span>&#160;    QColor <a class="code" href="class_etat.html#ad01bd9fd535216e8ca15a0962f7d074f">getCouleur</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> couleur; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_etat.html#a50e82466e31323a479c403413bb9186e">   45</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_etat.html#a50e82466e31323a479c403413bb9186e">setCouleur</a>(QColor color) { couleur = color; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_etat.html#ac8945471680d9dfe060af9984d38e8d7">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_etat.html#ac8945471680d9dfe060af9984d38e8d7">setLabel</a>(std::string str) { label = str; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_etat_manager.html">   59</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_etat_manager.html">EtatManager</a> {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="class_etat.html">Etat</a>** etats;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbEtats;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbMaxEtats;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_etat_manager.html">EtatManager</a>* instance;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_etat_manager.html">EtatManager</a>() : etats(<span class="keyword">nullptr</span>), nbEtats(0), nbMaxEtats(8) {}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ~<a class="code" href="class_etat_manager.html">EtatManager</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_etat_manager.html">EtatManager</a>(<span class="keyword">const</span> <a class="code" href="class_etat_manager.html">EtatManager</a>&amp; a) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_etat_manager.html">EtatManager</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_etat_manager.html">EtatManager</a>&amp; a) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_etat_manager.html">EtatManager</a>&amp; <a class="code" href="class_etat_manager.html#a74b1a1178dd3fea5c56f19f0d3a8c18d">getManager</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_etat_manager.html#a5ada80e8eb45121fcd31d2c1d71d61fe">libereManager</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_etat_manager.html#add979827d9f3d90aa182be6cc8e7d6a3">newEtat</a>(<span class="keyword">const</span> std::string str, QColor color);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_etat_manager.html#a8d64751bbac8af9dffcc07519d14bc36">   93</a></span>&#160;    <a class="code" href="class_etat.html">Etat</a>* <a class="code" href="class_etat_manager.html#a8d64751bbac8af9dffcc07519d14bc36">getEtat</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> etats[i]; }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_etat_manager.html#a6a6457022f051964272cd31d0efc0273">   98</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_etat_manager.html#a6a6457022f051964272cd31d0efc0273">getNbEtats</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> nbEtats; }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_etat_manager.html#a6c075adb5f3f5951a70548143a23fc59">setNbMaxEtats</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ETAT_H</span></div>
+<div class="ttc" id="aclass_etat_html"><div class="ttname"><a href="class_etat.html">Etat</a></div><div class="ttdoc">Objet Etat repésentant l'état des cellules d'un automate, défini par un indice, un label et une coule...</div><div class="ttdef"><b>Definition:</b> etat.h:10</div></div>
+<div class="ttc" id="aclass_etat_html_a50e82466e31323a479c403413bb9186e"><div class="ttname"><a href="class_etat.html#a50e82466e31323a479c403413bb9186e">Etat::setCouleur</a></div><div class="ttdeci">void setCouleur(QColor color)</div><div class="ttdoc">Modifie la couleur de l'état.</div><div class="ttdef"><b>Definition:</b> etat.h:45</div></div>
+<div class="ttc" id="aclass_etat_html_a542f4d814afc5fba55937b7526e793d1"><div class="ttname"><a href="class_etat.html#a542f4d814afc5fba55937b7526e793d1">Etat::Etat</a></div><div class="ttdeci">Etat(unsigned int i, std::string lab, QColor c)</div><div class="ttdoc">Constructeur de la classe Etat.</div><div class="ttdef"><b>Definition:</b> etat.h:24</div></div>
+<div class="ttc" id="aclass_etat_html_a671dd6cebfda630a15b3c757b3d58d46"><div class="ttname"><a href="class_etat.html#a671dd6cebfda630a15b3c757b3d58d46">Etat::getLabel</a></div><div class="ttdeci">std::string getLabel() const</div><div class="ttdoc">Retourne le label de l'état.</div><div class="ttdef"><b>Definition:</b> etat.h:34</div></div>
+<div class="ttc" id="aclass_etat_html_ac8945471680d9dfe060af9984d38e8d7"><div class="ttname"><a href="class_etat.html#ac8945471680d9dfe060af9984d38e8d7">Etat::setLabel</a></div><div class="ttdeci">void setLabel(std::string str)</div><div class="ttdoc">Modifie le label de l'état.</div><div class="ttdef"><b>Definition:</b> etat.h:51</div></div>
+<div class="ttc" id="aclass_etat_html_ad01bd9fd535216e8ca15a0962f7d074f"><div class="ttname"><a href="class_etat.html#ad01bd9fd535216e8ca15a0962f7d074f">Etat::getCouleur</a></div><div class="ttdeci">QColor getCouleur() const</div><div class="ttdoc">Retourne la couleur de l'état.</div><div class="ttdef"><b>Definition:</b> etat.h:39</div></div>
+<div class="ttc" id="aclass_etat_html_ae9ff5e27a32638b17e26c82c3c2e4138"><div class="ttname"><a href="class_etat.html#ae9ff5e27a32638b17e26c82c3c2e4138">Etat::getIndice</a></div><div class="ttdeci">unsigned int getIndice() const</div><div class="ttdoc">Retourne l'indice de l'état.</div><div class="ttdef"><b>Definition:</b> etat.h:29</div></div>
+<div class="ttc" id="aclass_etat_manager_html"><div class="ttname"><a href="class_etat_manager.html">EtatManager</a></div><div class="ttdoc">Classe gérant l'ensemble des états disponibles, possédant ainsi un tableau de tous les états actuelle...</div><div class="ttdef"><b>Definition:</b> etat.h:59</div></div>
+<div class="ttc" id="aclass_etat_manager_html_a5ada80e8eb45121fcd31d2c1d71d61fe"><div class="ttname"><a href="class_etat_manager.html#a5ada80e8eb45121fcd31d2c1d71d61fe">EtatManager::libereManager</a></div><div class="ttdeci">static void libereManager()</div><div class="ttdoc">Libère l'instance de l'EtatManager.</div><div class="ttdef"><b>Definition:</b> etat.cpp:24</div></div>
+<div class="ttc" id="aclass_etat_manager_html_a6a6457022f051964272cd31d0efc0273"><div class="ttname"><a href="class_etat_manager.html#a6a6457022f051964272cd31d0efc0273">EtatManager::getNbEtats</a></div><div class="ttdeci">unsigned int getNbEtats() const</div><div class="ttdoc">Retourne le nombre d'états stockés actuellement dans le tableau d'états de l'EtatManager.</div><div class="ttdef"><b>Definition:</b> etat.h:98</div></div>
+<div class="ttc" id="aclass_etat_manager_html_a6c075adb5f3f5951a70548143a23fc59"><div class="ttname"><a href="class_etat_manager.html#a6c075adb5f3f5951a70548143a23fc59">EtatManager::setNbMaxEtats</a></div><div class="ttdeci">void setNbMaxEtats(unsigned int nb)</div><div class="ttdoc">Permet de choisir le nombre maximal d'états possibles.</div><div class="ttdef"><b>Definition:</b> etat.cpp:43</div></div>
+<div class="ttc" id="aclass_etat_manager_html_a74b1a1178dd3fea5c56f19f0d3a8c18d"><div class="ttname"><a href="class_etat_manager.html#a74b1a1178dd3fea5c56f19f0d3a8c18d">EtatManager::getManager</a></div><div class="ttdeci">static EtatManager &amp; getManager()</div><div class="ttdoc">Retourne l'instance de la classe EtatManager.</div><div class="ttdef"><b>Definition:</b> etat.cpp:16</div></div>
+<div class="ttc" id="aclass_etat_manager_html_a8d64751bbac8af9dffcc07519d14bc36"><div class="ttname"><a href="class_etat_manager.html#a8d64751bbac8af9dffcc07519d14bc36">EtatManager::getEtat</a></div><div class="ttdeci">Etat * getEtat(unsigned int i)</div><div class="ttdoc">Retourne un pointeur sur l'état se trouvant à l'indice i du tableau d'états de l'EtatManager.</div><div class="ttdef"><b>Definition:</b> etat.h:93</div></div>
+<div class="ttc" id="aclass_etat_manager_html_add979827d9f3d90aa182be6cc8e7d6a3"><div class="ttname"><a href="class_etat_manager.html#add979827d9f3d90aa182be6cc8e7d6a3">EtatManager::newEtat</a></div><div class="ttdeci">void newEtat(const std::string str, QColor color)</div><div class="ttdoc">Construit un nouvel Etat.</div><div class="ttdef"><b>Definition:</b> etat.cpp:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
